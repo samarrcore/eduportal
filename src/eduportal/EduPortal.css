@@ -1,0 +1,41 @@
+/* Main CSS for EduPortal - will be imported in App.jsx */
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #F8F9FB;
+  color: #222;
+}
+
+:root {
+  --primary: #4F46E5;
+  --secondary: #6366F1;
+  --accent: #F59E42;
+  --background: #F8F9FB;
+  --surface: #FFF;
+  --text: #222;
+  --muted: #6B7280;
+  --border: #E5E7EB;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  color: var(--text);
+}
+
+/* Improve placeholder and autofill visibility */
+::placeholder { color: var(--muted); opacity: 1; }
+input:-webkit-autofill { -webkit-text-fill-color: var(--text); }
